@@ -1,0 +1,100 @@
+html {
+  font-family: outfit;
+  font-size: 14px;
+  background-color: hsl(217, 54%, 11%);
+  color: rgba(255, 255, 255, 0.812);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.content {
+  width: 240px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px hsl(217, 54%, 8%);
+}
+.content:hover {
+  transform: scale(105%);
+  margin: 10px;
+}
+.content div {
+  padding: 10px 20px;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px hsl(217, 54%, 11%);
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.description,
+#time {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+.offer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+#price {
+  font-weight: 600;
+  color: hsl(178, 100%, 50%);
+}
+#price::before {
+  content: url(images/icon-ethereum.svg);
+  margin: 0 3px 0 0;
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin: 0 3px 0 0;
+}
+#time::before {
+  content: url(images/icon-clock.svg);
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin: 0 3px 0 0;
+}
+.author {
+  box-shadow: 0.1px solid hsl(215, 51%, 70%);
+
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+b {
+  color: white;
+  font-weight: 300;
+}
+.author img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+b:hover,
+.title:hover {
+  color: cyan;
+  cursor: pointer;
+}
+img:hover {
+  background-color: cyan;
+  opacity: 0.8 !important;
+}
